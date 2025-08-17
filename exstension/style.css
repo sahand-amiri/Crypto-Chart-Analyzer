@@ -48,11 +48,8 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    /* ------------------------------------- */
-    /* Key changes for stability */
-    height: 48px; /* Fixed height */
-    padding: 0; /* Remove padding to prevent flicker */
-    /* ------------------------------------- */
+    height: 48px;
+    padding: 0;
 }
 
 #captureButton:hover {
@@ -65,16 +62,12 @@ p {
     cursor: not-allowed;
 }
 
-/* Hide the button text when the spinner is visible */
 #captureButton .button-text {
     transition: opacity 0.3s;
-    /* ------------------------------------- */
-    /* Key change: absolute positioning */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* ------------------------------------- */
 }
 
 #captureButton:disabled .button-text {
@@ -119,7 +112,7 @@ p {
     background-color: #f9fafb;
     line-height: 1.6;
     color: #333;
-    direction: ltr; /* Changed to ltr for English */
+    direction: ltr;
 }
 .analysis-card {
     background-color: #ffffff;
@@ -145,5 +138,5 @@ p {
     overflow-x: auto;
     font-family: 'Segoe UI', monospace;
     font-size: 1em;
-    text-align: left; /* Changed to left for English */
+    text-align: left;
 }
